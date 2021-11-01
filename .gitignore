@@ -2,6 +2,10 @@
 .vscode
 .idea
 
+# cvs configs
+.npmrc
+.yarnrc
+
 # dependencies
 node_modules
 
@@ -13,8 +17,9 @@ node_modules
 /coverage
 
 # production
-build
 dist
+build
+bundle
 
 # misc
 .DS_Store
