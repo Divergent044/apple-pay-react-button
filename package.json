@@ -1,0 +1,9 @@
+{
+  "name": "apple-pay-react-button",
+  "version": "0.0.1-alpha.0",
+  "description": "React component for Apple Pay button",
+  "author": "Pavel Zakharov <dev.divergent044@gmail.com>",
+  "license": "Apache-2.0 License",
+  "dependencies": {
+  }
+}
