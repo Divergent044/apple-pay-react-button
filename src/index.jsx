@@ -1,11 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 const Index = ({ text }) => {
-  const [x] = useState(77);
+  const [x, setX] = useState(88);
+
+  useEffect(() => {
+    setX(395689734673453465438376348678346);
+  }, []);
 
   return (
-    <div style={{ color: 'red' }}>
+    <div style={{ color: 'green' }}>
       Index {x}
       <br />
       {text}

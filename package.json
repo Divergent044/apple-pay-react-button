@@ -14,18 +14,20 @@
   "keywords": [],
   "engines": {},
   "sideEffects": false,
+  "type": "module",
   "scripts": {
-    "build": "rimraf bundle && esbuild src/index.jsx --bundle --inject:dev/react-shim.js --minify --outfile=bundle/index.js"
+    "start": "rimraf www/bundle && node scripts/dev.js -w",
+    "build": "rimraf bundle && node scripts/build.js"
   },
   "dependencies": {
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
-    "esbuild": "^0.13.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
+    "esbuild": "^0.13.12",
+    "esbuild-serve": "^1.0.1",
     "eslint": "^8.1.0",
     "rimraf": "^3.0.2"
   }

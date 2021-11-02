@@ -16,10 +16,10 @@ node_modules
 # testing
 /coverage
 
-# production
+# builds
 dist
 build
-bundle
+www/bundle
 
 # misc
 .DS_Store
