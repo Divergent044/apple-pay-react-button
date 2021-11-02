@@ -17,7 +17,8 @@
   "type": "module",
   "scripts": {
     "start": "rimraf www/bundle && node scripts/dev.js -w",
-    "build": "rimraf bundle && node scripts/build.js"
+    "build": "rimraf bundle && node scripts/build.js",
+    "stylelint": "stylelint './src/**/*.css' --fix"
   },
   "dependencies": {
     "@types/applepayjs": "^3.0.2",
