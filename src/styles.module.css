@@ -1,6 +1,7 @@
 .component {
   margin: 0 auto;
+  padding: 30px;
 
-  color: honeydew;
-  background: red;
+  color: springgreen;
+  background: firebrick;
 }

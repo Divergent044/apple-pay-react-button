@@ -1,15 +1,14 @@
-import EsbuildServer from 'esbuild-serve';
-import Esbuild from 'esbuild';
 import CssModulesPlugin from 'esbuild-css-modules-plugin';
+
+import { EsbuildServer } from '../dev/server.js';
 
 EsbuildServer(
   {
     bundle: true,
-    // platform: 'node',
+    platform: 'node',
     logLevel: 'info',
     inject: ['dev/react-shim.js'],
-    // entryPoints: ['src/index.jsx'],
-    entryPoints: ['src/app.js'],
+    entryPoints: ['src/index.jsx'],
     outfile: 'www/bundle/index.js',
     define: { 'process.env.NODE_ENV': "'development'" },
     plugins: [

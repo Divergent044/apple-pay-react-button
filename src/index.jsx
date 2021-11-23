@@ -10,7 +10,7 @@ const Index = ({ text }) => {
   const [x, setX] = useState(88);
 
   useEffect(() => {
-    setX(395689734673453465438376348678346);
+    setX('kjbdvkjervkjev');
     const block = document.querySelector('#div');
     block.className = styles.component;
   }, []);
