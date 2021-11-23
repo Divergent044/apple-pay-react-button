@@ -17,6 +17,7 @@
   "type": "module",
   "scripts": {
     "start": "rimraf www/bundle && node scripts/dev.js -w",
+    "build:dev": "rimraf www/bundle && node scripts/dev.js",
     "build": "rimraf bundle && node scripts/build.js",
     "stylelint": "stylelint './src/**/*.css' --fix"
   },
@@ -24,11 +25,14 @@
     "@types/applepayjs": "^3.0.2",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
+    "classnames": "^2.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "css-tree": "^1.1.3",
     "esbuild": "^0.13.12",
+    "esbuild-css-modules-plugin": "2.0.8",
     "esbuild-serve": "^1.0.1",
     "eslint": "^8.1.0",
     "rimraf": "^3.0.2",

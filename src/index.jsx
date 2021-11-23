@@ -1,15 +1,22 @@
 import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import classNames from 'classnames/bind';
+
+import styles from './styles.module.css';
+//const cx = classNames.bind(styles);
+
 
 const Index = ({ text }) => {
   const [x, setX] = useState(88);
 
   useEffect(() => {
     setX(395689734673453465438376348678346);
+    const block = document.querySelector('#div');
+    block.className = styles.component;
   }, []);
 
   return (
-    <div style={{ color: 'green' }}>
+    <div id="div">
       Index {x}
       <br />
       {text}
