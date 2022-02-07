@@ -1,0 +1,45 @@
+{
+  "name": "apple-pay-react-button",
+  "version": "0.0.1-alpha.0",
+  "description": "React component for Apple Pay button",
+  "author": "Pavel Zakharov <dev.divergent044@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Divergent044/apple-pay-react-button.git"
+  },
+  "main": "",
+  "types": "",
+  "files": [],
+  "keywords": [],
+  "engines": {},
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "start": "rimraf www/bundle && node scripts/dev.js -w",
+    "build:dev": "rimraf www/bundle && node scripts/dev.js",
+    "build": "rimraf bundle && node scripts/build.js",
+    "stylelint": "stylelint './src/**/*.css' --fix"
+  },
+  "dependencies": {
+    "@types/applepayjs": "^3.0.2",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "classnames": "^2.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "create-serve": "^1.0.1",
+    "css-tree": "^2.0.4",
+    "esbuild": "^0.14.11",
+    "esbuild-css-modules-plugin": "2.0.9",
+    "eslint": "^8.1.0",
+    "rimraf": "^3.0.2",
+    "stylelint": "^14.0.1",
+    "stylelint-config-css-modules": "^2.3.0",
+    "stylelint-config-standard": "^23.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-selector-no-empty": "^1.0.8"
+  }
+}
